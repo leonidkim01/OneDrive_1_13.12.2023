@@ -11,6 +11,7 @@ def client(host: str, port: int) -> None:
         s.sendall(message.encode())
         data = s.recv(1024)
         print(f"Получены данные: \"{data.decode('utf-8')}\"")
+# privet
 
 
 if __name__ == '__main__':
